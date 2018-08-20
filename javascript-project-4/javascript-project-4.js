@@ -93,6 +93,10 @@ const multipleByThree = (result) => {
 // }
 // fn2()
 
+let result = numberValidation(2).then(multipleByTwo).then(multipleByTwo).then(multipleByThree).then(res => { return res }).catch(err => { return err })
+console.log(result)
+
+
 //LEVEL 7 (just experiment)
 // const addPositiveNumber = (a, b) => {
 //     //check is input is number
@@ -112,10 +116,3 @@ const multipleByThree = (result) => {
 // }
 
 // addPositiveNumber(2, 2).then(IsResultMoreThanZero).then(res => console.log(res)).catch(err => console.log(err))
-
-
-
-
-
-
-
